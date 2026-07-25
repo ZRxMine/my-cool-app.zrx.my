@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>دانلود اپلیکیشن</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      min-height:100vh;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      background:radial-gradient(1000px 600px at 10% 10%, rgba(124,58,237,.25), transparent 60%),
+                 radial-gradient(900px 500px at 90% 20%, rgba(34,211,238,.22), transparent 55%),
+                 radial-gradient(900px 500px at 50% 90%, rgba(34,197,94,.18), transparent 55%),
+                 #070812;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+    }
+
+    .card{
+      width:min(720px,100%);
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:0 18px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(10px);
+    }
+
+    h1{
+      text-align:center;
+      font-size:1.9rem;
+      margin-bottom:14px;
+      background:linear-gradient(90deg,#22d3ee,#7c3aed);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .sub{
+      text-align:center;
+      color:rgba(255,255,255,.75);
+      margin-bottom:18px;
+      line-height:1.7;
+      font-size:.98rem;
+    }
+
+    .btns{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:8px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      transition:.18s transform, .18s filter;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-2px);filter:saturate(1.1)}
+    .btn:active{transform:translateY(0px)}
+
+    .btn.win{
+      background:linear-gradient(90deg,#0ea5e9,#2563eb);
+      color:#fff;
+    }
+    .btn.and{
+      background:linear-gradient(90deg,#22c55e,#16a34a);
+      color:#052e13;
+    }
+
+    .btn span{
+      font-size:1.05rem;
+    }
+
+    .section{
+      margin-top:18px;
+      border-top:1px solid rgba(255,255,255,.10);
+      padding-top:16px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+
+    .install{
+      padding:14px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .label{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:10px;
+    }
+    .label b{font-size:1.02rem}
+    .badge{
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:.85rem;
+      border:1px solid rgba(255,255,255,.15);
+    }
+
+    .badge.win{
+      background:rgba(239,68,68,.15);
+      border-color:rgba(239,68,68,.35);
+      color:#fecaca;
+    }
+
+    .badge.and{
+      background:rgba(34,197,94,.14);
+      border-color:rgba(34,197,94,.32);
+      color:#bbf7d0;
+    }
+
+    .steps{
+      line-height:1.8;
+      color:rgba(255,255,255,.85);
+      font-size:.95rem;
+      padding-right:18px;
+      list-style:disc;
+    }
+
+    .note{
+      margin-top:10px;
+      background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;
+      padding:12px;
+      color:rgba(255,255,255,.78);
+      font-size:.9rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>دانلود اپلیکیشن</h1>
+    <div class="sub">برای نصب راحت، نسخه ویندوز و اندروید را جداگانه دانلود کن.</div>
+
+    <div class="btns">
+      <a class="btn win" href="WINDOWS_URL_HERE" target="_blank" rel="noopener">
+        <span>⬇️ دانلود برای ویندوز</span>
+      </a>
+      <a class="btn and" href="ANDROID_URL_HERE" target="_blank" rel="noopener">
+        <span>⬇️ دانلود برای اندروید</span>
+      </a>
+    </div>
+
+    <div class="section">
+      <div class="install" style="background:linear-gradient(135deg, rgba(239,68,68,.16), rgba(239,68,68,.06)); border-color:rgba(239,68,68,.28;">
+        <div class="label">
+          <b>آموزش نصب (ویندوز)</b>
+          <span class="badge win">قرمز</span>
+        </div>
+        <ul class="steps">
+          <li>فایل نصبی را دانلود کن.</li>
+          <li>روی فایل دانلود شده دوبار کلیک کن.</li>
+          <li>گزینه‌های Next را تایید کن و نصب را کامل کن.</li>
+          <li>پس از نصب، اپلیکیشن را اجرا کن.</li>
+        </ul>
+      </div>
+
+      <div class="install" style="background:linear-gradient(135deg, rgba(34,197,94,.18), rgba(34,197,94,.06)); border-color:rgba(34,197,94,.30;">
+        <div class="label">
+          <b>آموزش نصب (اندروید)</b>
+          <span class="badge and">سبز خفن</span>
+        </div>
+        <ul class="steps">
+          <li>فایل APK را دانلود کن.</li>
+          <li>در گوشی: Settings &gt; Security (یا Privacy) را باز کن.</li>
+          <li>Allow “Install unknown apps” را برای مرورگر/فایل‌منجر فعال کن.</li>
+          <li>APK را اجرا کن و نصب را انجام بده.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="background:radial-gradient(600px 180px at 10% 50%, rgba(34,211,238,.18), transparent 60%), rgba(255,255,255,.03);">
+      اگر لینک دانلود را داری، فقط جای <b>WINDOWS_URL_HERE</b> و <b>ANDROID_URL_HERE</b> بذار.
+    </div>
+  </div>
+</body>
+</html>
